@@ -14,9 +14,9 @@ const seq = new Sequelize(MYSQL_DB, MYSQL_USER, MYSQL_PWD, {
     dialect: 'mysql',
   })
 
-seq.authenticate().then( ()=>{
-    console.log('数据库连接成功');
-} ).catch(err=>console.log(err))
+// seq.authenticate().then( ()=>{
+//     console.log('数据库连接成功');
+// } ).catch(err=>console.log(err))
 
 
 module.exports = seq
